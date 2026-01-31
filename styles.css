@@ -1,0 +1,348 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navigation */
+nav {
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: #666;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #333;
+}
+
+/* Hero Section */
+.hero {
+    padding: 6rem 0;
+    text-align: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.tagline {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background: white;
+    color: #667eea;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: transform 0.3s;
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+}
+
+/* Sections */
+section {
+    padding: 4rem 0;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+/* Project Grid */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    padding: 2rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card h3 {
+    margin-bottom: 0.5rem;
+    color: #667eea;
+}
+
+.project-card a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Blog Preview */
+.blog-preview {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.blog-card {
+    padding: 1.5rem;
+    border-left: 4px solid #667eea;
+    background: #f8f9fa;
+}
+
+.blog-card .date {
+    color: #999;
+    font-size: 0.9rem;
+}
+
+.blog-card h3 {
+    margin: 0.5rem 0;
+}
+
+.blog-card h3 a {
+    color: #333;
+    text-decoration: none;
+}
+
+.blog-card h3 a:hover {
+    color: #667eea;
+}
+
+.view-all {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Page Content */
+.page-content {
+    padding: 4rem 20px;
+    min-height: 60vh;
+}
+
+.page-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.intro {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 3rem;
+}
+
+/* Projects Page */
+.projects-list {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.project-item {
+    padding: 2rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.project-item h2 {
+    color: #667eea;
+    margin-bottom: 0.5rem;
+}
+
+.project-meta {
+    color: #999;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.project-links {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.6rem 1.5rem;
+    background: #667eea;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.button:hover {
+    background: #5568d3;
+}
+
+.button-secondary {
+    display: inline-block;
+    padding: 0.6rem 1.5rem;
+    background: transparent;
+    color: #667eea;
+    text-decoration: none;
+    border: 2px solid #667eea;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.button-secondary:hover {
+    background: #667eea;
+    color: white;
+}
+
+/* Blog Page */
+.blog-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.blog-entry {
+    padding: 2rem;
+    border-bottom: 1px solid #eee;
+}
+
+.blog-entry .date {
+    color: #999;
+    font-size: 0.9rem;
+}
+
+.blog-entry h2 {
+    margin: 0.5rem 0 1rem 0;
+    font-size: 1.8rem;
+}
+
+.blog-entry h2 a {
+    color: #333;
+    text-decoration: none;
+}
+
+.blog-entry h2 a:hover {
+    color: #667eea;
+}
+
+.read-more {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Individual Blog Post */
+.blog-post {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.back-link {
+    color: #667eea;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+
+.blog-post h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.post-meta {
+    color: #999;
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+}
+
+.post-content {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.post-content p {
+    margin-bottom: 1.5rem;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .tagline {
+        font-size: 1.1rem;
+    }
+    
+    .nav-links {
+        gap: 1rem;
+    }
+    
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+}
